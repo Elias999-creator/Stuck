@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36ba057be72244de4801d86a8c08f480, type: 3}
-  m_Name: Helmet of FIre
+  m_Name: Default Shirt
   m_EditorClassIdentifier: 
-  name: Helmet of Fire
-  icon: {fileID: 21300000, guid: 7afb0b300fe684bc295f938b886435cf, type: 3}
-  isDefualtItem: 0
-  equipSlot: 0
-  mesh: {fileID: 7480005902560354818, guid: 5456d8ab2953a4d38954f1e1af7a9314, type: 3}
-  armorModifier: 2
-  damageModifier: 1
+  name: Default Shirt
+  icon: {fileID: 0}
+  isDefualtItem: 1
+  equipSlot: 1
+  mesh: {fileID: 2117270347233316856, guid: 641dc1153776c4761aa6af21a6d0772e, type: 3}
+  coveredMeshRegions: 
+  armorModifier: 0
+  damageModifier: 0

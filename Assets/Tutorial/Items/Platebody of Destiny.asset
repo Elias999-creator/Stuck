@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36ba057be72244de4801d86a8c08f480, type: 3}
-  m_Name: Helmet of FIre
+  m_Name: Platebody of Destiny
   m_EditorClassIdentifier: 
-  name: Helmet of Fire
-  icon: {fileID: 21300000, guid: 7afb0b300fe684bc295f938b886435cf, type: 3}
+  name: Platebody of Destiny
+  icon: {fileID: 21300000, guid: f5282cca060a241a98c5c9e0e1ef857d, type: 3}
   isDefualtItem: 0
-  equipSlot: 0
-  mesh: {fileID: 7480005902560354818, guid: 5456d8ab2953a4d38954f1e1af7a9314, type: 3}
-  armorModifier: 2
-  damageModifier: 1
+  equipSlot: 1
+  mesh: {fileID: 2878639700910395059, guid: b1967bb9c3e0b4462b2410b6a31ef70d, type: 3}
+  coveredMeshRegions: 0100000002000000
+  armorModifier: 0
+  damageModifier: 3

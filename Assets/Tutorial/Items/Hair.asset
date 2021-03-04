@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36ba057be72244de4801d86a8c08f480, type: 3}
-  m_Name: Helmet of Protection
+  m_Name: Hair
   m_EditorClassIdentifier: 
-  name: Helmet of Protection
-  icon: {fileID: 21300000, guid: 8a25b5c30e50b4a3da2be7f09f437bda, type: 3}
-  isDefualtItem: 0
+  name: Hair
+  icon: {fileID: 0}
+  isDefualtItem: 1
   equipSlot: 0
-  armorModifier: 3
+  mesh: {fileID: 4423755757627241773, guid: 847c74757e2ba45a582f5165dc8ef350, type: 3}
+  coveredMeshRegions: 
+  armorModifier: 0
   damageModifier: 0
