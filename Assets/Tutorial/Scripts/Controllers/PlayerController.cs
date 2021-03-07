@@ -1,7 +1,6 @@
 ﻿using UnityEngine.EventSystems;
 using UnityEngine;
 
-[RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour
 {
 
@@ -10,13 +9,11 @@ public class PlayerController : MonoBehaviour
     public LayerMask movementMask;
 
     Camera cam;
-    PlayerMotor motor;
 
     // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
-        motor = GetComponent<PlayerMotor>();
     }
 
     // Update is called once per frame
@@ -32,8 +29,6 @@ public class PlayerController : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 100, movementMask))
             {
-                motor.MoveToPoint(hit.point);
-
                 RemoveFocus();
             }
         }
@@ -62,7 +57,6 @@ public class PlayerController : MonoBehaviour
                 focus.OnDefocused();
 
             focus = newFocus;
-            motor.FollowTarget(newFocus);
         }
 
         
@@ -75,6 +69,5 @@ public class PlayerController : MonoBehaviour
             focus.OnDefocused();
 
         focus = null;
-        motor.StopFollowingTarget();
     }
 }
