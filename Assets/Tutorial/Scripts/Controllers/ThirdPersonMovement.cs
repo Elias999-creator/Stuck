@@ -28,11 +28,17 @@ public class ThirdPersonMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            Debug.Log(moveDir);
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
 
             animator.SetBool("isMoving", true);
         } else {
             animator.SetBool("isMoving", false);
+        }
+
+        if (!controller.isGrounded)
+        {
+            controller.Move(new Vector3(0f, -5, 0f));
         }
     }
 }

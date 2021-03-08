@@ -8,11 +8,12 @@ public class PlayerMotor : MonoBehaviour
 {
     Transform target;
     NavMeshAgent agent;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>(); 
+        agent = GetComponent<NavMeshAgent>();
     }
 
     private void Update()
@@ -35,6 +36,7 @@ public class PlayerMotor : MonoBehaviour
         agent.updateRotation = false;
 
         target = newTarget.interactionTransform;
+        animator.SetBool("isMoving", true);
     }
 
     public void StopFollowingTarget()
@@ -43,6 +45,7 @@ public class PlayerMotor : MonoBehaviour
         agent.updateRotation = true;
 
         target = null;
+        animator.SetBool("isMoving", false);
     }
 
     void FaceTarget ()

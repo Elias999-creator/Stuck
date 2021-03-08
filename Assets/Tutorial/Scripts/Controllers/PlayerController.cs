@@ -9,11 +9,13 @@ public class PlayerController : MonoBehaviour
     public LayerMask movementMask;
 
     Camera cam;
+    public PlayerMotor motor;
 
     // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
+        motor = GetComponent<PlayerMotor>();
     }
 
     // Update is called once per frame
@@ -23,17 +25,6 @@ public class PlayerController : MonoBehaviour
             return;
 
         if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, 100, movementMask))
-            {
-                RemoveFocus();
-            }
-        }
-
-        if (Input.GetMouseButtonDown(1))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -57,6 +48,7 @@ public class PlayerController : MonoBehaviour
                 focus.OnDefocused();
 
             focus = newFocus;
+            motor.FollowTarget(newFocus);
         }
 
         
@@ -69,5 +61,6 @@ public class PlayerController : MonoBehaviour
             focus.OnDefocused();
 
         focus = null;
+        motor.StopFollowingTarget();
     }
 }
