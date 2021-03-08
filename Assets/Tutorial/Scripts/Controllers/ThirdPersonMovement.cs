@@ -5,14 +5,23 @@ using UnityEngine;
 public class ThirdPersonMovement : MonoBehaviour
 
 {
+
     public CharacterController controller;
     public Transform cam;
     public Animator animator;
+    private float verticalVelocity;
+    public float gravity = 14.0f;
+    public float jumpForce = 7.0f;
 
     public float speed = 6f;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
+
+    private void Start()
+    {
+        controller = GetComponent<CharacterController>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -36,9 +45,18 @@ public class ThirdPersonMovement : MonoBehaviour
             animator.SetBool("isMoving", false);
         }
 
-        if (!controller.isGrounded)
+        if (controller.isGrounded)
         {
-            controller.Move(new Vector3(0f, -5, 0f));
+            verticalVelocity = -gravity * Time.deltaTime;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                verticalVelocity = jumpForce;
+            }
+        } else {
+            verticalVelocity -= gravity * Time.deltaTime;
         }
+
+        Vector3 moveVector = new Vector3(0, verticalVelocity, 0);
+        controller.Move(moveVector * Time.deltaTime);
     }
 }
