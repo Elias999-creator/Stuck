@@ -849,7 +849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 157229482}
   - component: {fileID: 157229483}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3549,7 +3549,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 767033481}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: River navmesh carve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4626,9 +4626,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 731768c8f47254e67afb7a6ece15e053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastPosition: {x: 0, y: 0, z: 0}
-  controller: {fileID: 0}
-  animator: {fileID: 0}
 --- !u!114 &959987118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4675,6 +4672,8 @@ MonoBehaviour:
   controller: {fileID: 959987116}
   cam: {fileID: 1728564191}
   animator: {fileID: 919132148957562193}
+  gravity: 10
+  jumpForce: 7
   speed: 6
   turnSmoothTime: 0.1
 --- !u!114 &959987121
@@ -7479,7 +7478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1765992048}
   - component: {fileID: 1765992049}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: GameObject (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8512,7 +8511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2083484669}
   - component: {fileID: 2083484670}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
