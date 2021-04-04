@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerStats : CharacterStats
 {
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,9 +27,11 @@ public class PlayerStats : CharacterStats
         }
     }
 
-    public override void Die()
+    public override IEnumerator Die()
     {
         base.Die();
+        animator.SetTrigger("isDead");
+        yield return new WaitForSecondsRealtime(5);
         PlayerManager.instance.KillPlayer();
     }
 }

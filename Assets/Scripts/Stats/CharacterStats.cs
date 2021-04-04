@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class CharacterStats : MonoBehaviour
 {
@@ -31,14 +32,15 @@ public class CharacterStats : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            Die();
+            StartCoroutine(Die());
         }
     }
 
-    public virtual void Die ()
+    public virtual IEnumerator Die ()
     {
         // Die in some way
         // This method is meant to be overwritten
         Debug.Log(transform.name + " died.");
+        yield return null;
     }
 }
