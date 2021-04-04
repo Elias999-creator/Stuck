@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterStats))]
 public class CharacterCombat : MonoBehaviour
 {
+    public Animator animator;
     public float attackSpeed = 1f;
     private float attackCooldown = 0f;
 
@@ -28,6 +29,7 @@ public class CharacterCombat : MonoBehaviour
     {
         if (attackCooldown <= 0f)
         {
+            animator.SetTrigger("isAttacking");
             StartCoroutine(DoDamage(targetStats, attackDelay));
 
             if (OnAttack != null)
