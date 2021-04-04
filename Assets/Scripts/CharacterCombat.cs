@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterStats))]
 public class CharacterCombat : MonoBehaviour
 {
-    public Animator animator;
+    Animator animator;
     public float attackSpeed = 1f;
     private float attackCooldown = 0f;
 
@@ -17,7 +17,8 @@ public class CharacterCombat : MonoBehaviour
 
     void Start()
     {
-        myStats = GetComponent<CharacterStats>();    
+        myStats = GetComponent<CharacterStats>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     void Update()
