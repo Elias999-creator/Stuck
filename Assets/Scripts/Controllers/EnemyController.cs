@@ -41,7 +41,8 @@ public class EnemyController : MonoBehaviour
                 CharacterStats targetStats = target.GetComponent<CharacterStats>();
                 if (targetStats != null)
                 {
-                    combat.Attack(targetStats);
+                    if (agent.remainingDistance < 1)
+                        combat.Attack(targetStats);
                 }
                 FaceTarget();
             }
