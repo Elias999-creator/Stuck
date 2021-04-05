@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ThirdPersonMovement : MonoBehaviour
-
 {
-
     public CharacterController controller;
     public Transform cam;
     public Animator animator;
@@ -41,7 +39,9 @@ public class ThirdPersonMovement : MonoBehaviour
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
 
             animator.SetBool("isMoving", true);
-        } else {
+        }
+        else
+        {
             animator.SetBool("isMoving", false);
         }
 
@@ -52,7 +52,9 @@ public class ThirdPersonMovement : MonoBehaviour
             {
                 verticalVelocity = jumpForce;
             }
-        } else {
+        }
+        else
+        {
             verticalVelocity -= gravity * Time.deltaTime;
         }
 
