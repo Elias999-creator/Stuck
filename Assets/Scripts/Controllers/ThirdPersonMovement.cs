@@ -8,6 +8,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public Transform cam;
     public Animator animator;
     private float verticalVelocity;
+    private PlayerStats playerStats;
     public float gravity = 14.0f;
     public float jumpForce = 7.0f;
 
@@ -19,6 +20,7 @@ public class ThirdPersonMovement : MonoBehaviour
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        playerStats = GetComponent<PlayerStats>();
     }
 
     // Update is called once per frame
@@ -28,7 +30,7 @@ public class ThirdPersonMovement : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        if (direction.magnitude >= 0.1f)
+        if (direction.magnitude >= 0.1f && !playerStats.isDead())
         {
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);

@@ -43,4 +43,9 @@ public class CharacterStats : MonoBehaviour
         Debug.Log(transform.name + " died.");
         yield return null;
     }
+
+    public bool isDead ()
+    {
+        return currentHealth <= 0;
+    }
 }
