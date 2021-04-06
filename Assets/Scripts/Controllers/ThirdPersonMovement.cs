@@ -49,7 +49,7 @@ public class ThirdPersonMovement : MonoBehaviour
         if (controller.isGrounded)
         {
             verticalVelocity = -gravity * Time.deltaTime;
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && !playerStats.isDead())
             {
                 verticalVelocity = jumpForce;
             }
