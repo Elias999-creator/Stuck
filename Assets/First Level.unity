@@ -39030,7 +39030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 944ccc7a5d20845c4b25b6c1e511af3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1413731604}
 --- !u!143 &1650923827
 CharacterController:
   m_ObjectHideFlags: 0

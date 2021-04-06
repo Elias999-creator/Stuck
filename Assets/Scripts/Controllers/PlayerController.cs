@@ -38,6 +38,11 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            RemoveFocus();
+        }
     }
 
     void SetFocus(Interactable newFocus)

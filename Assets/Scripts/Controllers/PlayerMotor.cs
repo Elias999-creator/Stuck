@@ -42,7 +42,6 @@ public class PlayerMotor : MonoBehaviour
     public void StopFollowingTarget()
     {
         agent.stoppingDistance = 0f;
-        agent.updateRotation = true;
 
         target = null;
         animator.SetBool("isMoving", false);
