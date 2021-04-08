@@ -8,17 +8,19 @@ public class PlayerMotor : MonoBehaviour
 {
     Transform target;
     NavMeshAgent agent;
+    PlayerStats playerStats;
     public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        playerStats = GetComponent<PlayerStats>();
     }
 
     private void Update()
     {
-        if (target != null)
+        if (target != null && !playerStats.isDead())
         {
             agent.SetDestination(target.position);
             FaceTarget();

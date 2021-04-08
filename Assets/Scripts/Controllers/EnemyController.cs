@@ -23,7 +23,7 @@ public class EnemyController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         float distance = Vector3.Distance(target.position, transform.position);
 
@@ -41,8 +41,10 @@ public class EnemyController : MonoBehaviour
                 CharacterStats targetStats = target.GetComponent<CharacterStats>();
                 if (targetStats != null)
                 {
-                    if (agent.remainingDistance <= agent.stoppingDistance)
+                    if (distance <= agent.stoppingDistance)
+                    {
                         combat.Attack(targetStats);
+                    }
                 }
                 FaceTarget();
             }
