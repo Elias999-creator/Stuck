@@ -6,12 +6,17 @@ public class CharacterStats : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth { get; private set; }
 
+    public HealthBar healthBar;
+
     public Stat damage;
     public Stat armor;
 
     void Awake()
     {
-        currentHealth = maxHealth;   
+        if (!healthBar)
+            healthBar = GetComponentInChildren<HealthBar>();
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     void Update()
@@ -28,6 +33,8 @@ public class CharacterStats : MonoBehaviour
         damage = Mathf.Clamp(damage, 0, int.MaxValue);
 
         currentHealth -= damage;
+
+        healthBar.SetHealth(currentHealth);
         Debug.Log(transform.name + " takes " + damage + " damage.");
 
         if (currentHealth <= 0)
