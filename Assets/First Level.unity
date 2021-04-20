@@ -1689,9 +1689,10 @@ MonoBehaviour:
   dialogue:
     name: Ekard
     sentences:
-    - "Hey there! My name is Ekard...\t"
-    - And I'm here to guide you through your dangrous adventures...
-    - And wake you up in the morning of course!
+    - I guess now I'm stuck in this cave...
+    - I've got to get outta here. Maybe I should look around and see what I can find.
+    - Although... there seems to be lots of enemies around so I've got to take care
+      of them.
 --- !u!1001 &62221516
 PrefabInstance:
   m_ObjectHideFlags: 0
