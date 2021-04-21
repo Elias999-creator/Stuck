@@ -43,6 +43,15 @@ public class CharacterStats : MonoBehaviour
         }
     }
 
+    public void Heal (int amount)
+    {
+        currentHealth += amount;
+        if (currentHealth > maxHealth)
+            currentHealth = maxHealth;
+
+        healthBar.SetHealth(currentHealth);
+    }
+
     public virtual IEnumerator Die ()
     {
         // Die in some way
