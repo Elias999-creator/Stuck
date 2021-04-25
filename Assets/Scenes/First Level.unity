@@ -52424,6 +52424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1098811610}
   - component: {fileID: 1098811609}
+  - component: {fileID: 1098811611}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -52541,6 +52542,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1098811611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098811608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3690c41bbf5648568cf7ec6ded4ce9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overworldMusic: {fileID: 8300000, guid: e33f7574b942c4e07b7e90f815e23ab5, type: 3}
+  battleMusic: {fileID: 8300000, guid: 62d01bb09921541238d2139dfce9a2ad, type: 3}
 --- !u!4 &1102422398 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4746225241488972, guid: 6cfa1086ba131854782fef34c182d965,
