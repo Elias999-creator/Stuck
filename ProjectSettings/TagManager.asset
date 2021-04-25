@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fire
   - Liquid
+  - Enemy
   layers:
   - Default
   - TransparentFX
