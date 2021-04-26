@@ -54535,10 +54535,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Acid
       objectReference: {fileID: 0}
-    - target: {fileID: 1558230472247936, guid: 64b1837b1cd40d541944cde538b260fe, type: 3}
-      propertyPath: m_TagString
-      value: Liquid
-      objectReference: {fileID: 0}
     - target: {fileID: 4920300329419138, guid: 64b1837b1cd40d541944cde538b260fe, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.09
@@ -54581,11 +54577,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4920300329419138, guid: 64b1837b1cd40d541944cde538b260fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5151042609800939378, guid: 64b1837b1cd40d541944cde538b260fe,
-        type: 3}
-      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -64932,6 +64923,7 @@ GameObject:
   - component: {fileID: 1650923828}
   - component: {fileID: 1650923827}
   - component: {fileID: 1650923826}
+  - component: {fileID: 1650923836}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -65106,6 +65098,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1650923836
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650923825}
+  m_Enabled: 1
 --- !u!1001 &1652560018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73482,10 +73482,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Acid
       objectReference: {fileID: 0}
-    - target: {fileID: 1558230472247936, guid: 64b1837b1cd40d541944cde538b260fe, type: 3}
-      propertyPath: m_TagString
-      value: Liquid
-      objectReference: {fileID: 0}
     - target: {fileID: 4920300329419138, guid: 64b1837b1cd40d541944cde538b260fe, type: 3}
       propertyPath: m_LocalPosition.x
       value: 73.154205
@@ -73529,10 +73525,6 @@ PrefabInstance:
     - target: {fileID: 4920300329419138, guid: 64b1837b1cd40d541944cde538b260fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920300329419138, guid: 64b1837b1cd40d541944cde538b260fe, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b1837b1cd40d541944cde538b260fe, type: 3}
