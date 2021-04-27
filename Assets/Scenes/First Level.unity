@@ -64923,7 +64923,6 @@ GameObject:
   - component: {fileID: 1650923828}
   - component: {fileID: 1650923827}
   - component: {fileID: 1650923826}
-  - component: {fileID: 1650923836}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -65098,14 +65097,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1650923836
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1650923825}
-  m_Enabled: 1
 --- !u!1001 &1652560018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82286,6 +82277,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.28
       objectReference: {fileID: 0}
+    - target: {fileID: 5082548606469236510, guid: 77c3c714c5cf34274ad66163db745111,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6489622ec09ca49d48ea2b2db5318af1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77c3c714c5cf34274ad66163db745111, type: 3}
 --- !u!4 &2116810018 stripped
