@@ -14,6 +14,7 @@ public class HealthCrate : Interactable
     IEnumerator OpenHealthCrate()
     {
         GetComponent<Animator>().SetTrigger("Open");
+        GetComponent<AudioSource>().Play();
         FindObjectOfType<PlayerStats>().Heal(25);
         yield return new WaitForSeconds(1.5f);
         Destroy(gameObject);
