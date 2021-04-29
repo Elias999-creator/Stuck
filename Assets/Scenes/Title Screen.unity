@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &39253511
 RectTransform:
   m_ObjectHideFlags: 0
@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 292379379}
   - component: {fileID: 292379378}
   m_Layer: 5
-  m_Name: Text
+  m_Name: OptionsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -984,7 +984,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &641471251
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1644,7 +1644,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1865,8 +1865,8 @@ RectTransform:
   m_Father: {fileID: 352724443}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2033,7 +2033,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -201.80002, y: -21}
+  m_AnchoredPosition: {x: -201.80002, y: -22}
   m_SizeDelta: {x: 0, y: -209.7161}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1839271794
@@ -2056,8 +2056,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\"W\" - Move Forward\n\"A\" - Move Left\n\"S\" - Move Back\n\"D\" - Move
-    Right\n\"Q\" - Defocus\n\"I\" OR \"B\" - Open/Close\nInventory\n\"Left Click\"
-    - Lock On \n& Attack\n\"U\" - Unequip All Armour\n\"Space\" - Jump"
+    Right\n\"Q\" - Defocus\n\"I\" OR \"B\" - Open/Close\nInventory\n\"U\" - Unequip
+    All Armour\n\"ESC\" - Open Pause Menu\n\"Left Click\" - Lock On \n& Attack\n\"Space\"
+    - Jump"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0fb32e5800fa4df28af57387cb844e9, type: 2}
   m_sharedMaterial: {fileID: -7384482737894027126, guid: e0fb32e5800fa4df28af57387cb844e9,
@@ -2085,8 +2086,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
