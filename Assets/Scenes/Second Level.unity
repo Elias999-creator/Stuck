@@ -37047,7 +37047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   overworldMusic: {fileID: 8300000, guid: e33f7574b942c4e07b7e90f815e23ab5, type: 3}
-  battleMusic: {fileID: 8300000, guid: 62d01bb09921541238d2139dfce9a2ad, type: 3}
+  battleMusic: {fileID: 8300000, guid: 612bd0565f0914f52b4ba22fcdba0077, type: 3}
 --- !u!82 &1134955471
 AudioSource:
   m_ObjectHideFlags: 0
