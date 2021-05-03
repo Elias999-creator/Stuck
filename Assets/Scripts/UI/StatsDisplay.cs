@@ -17,6 +17,6 @@ public class StatsDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = $"+{stats.damage.GetValue()} damage\n+{stats.armor.GetValue()} armor";
+        text.text = $"+{stats.damage.GetValue()} DMG\n+{stats.armor.GetValue()} DEF";
     }
 }
