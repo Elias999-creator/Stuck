@@ -9,13 +9,12 @@ public class PlayerController : MonoBehaviour
     public LayerMask movementMask;
 
     Camera cam;
-    public PlayerMotor motor;
+    public float attackRange;
 
     // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
-        motor = GetComponent<PlayerMotor>();
     }
 
     // Update is called once per frame
@@ -34,38 +33,21 @@ public class PlayerController : MonoBehaviour
                 Interactable interactable = hit.collider.GetComponent<Interactable>();
                 if (interactable != null)
                 {
-                    SetFocus(interactable);
+                    float distance = Vector3.Distance(interactable.transform.position, transform.position);
+                    if (distance <= attackRange)
+                    {
+                        FaceTarget(interactable.transform);
+                        interactable.Interact();
+                    }
                 }
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            RemoveFocus();
-        }
     }
 
-    void SetFocus(Interactable newFocus)
+    void FaceTarget(Transform target)
     {
-        if (newFocus != focus)
-        {
-            if (focus != null)
-                focus.OnDefocused();
-
-            focus = newFocus;
-            motor.FollowTarget(newFocus);
-        }
-
-
-        newFocus.OnFocused(transform);
-    }
-
-    void RemoveFocus()
-    {
-        if (focus != null)
-            focus.OnDefocused();
-
-        focus = null;
-        motor.StopFollowingTarget();
+        Vector3 direction = (target.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation = lookRotation;
     }
 }
