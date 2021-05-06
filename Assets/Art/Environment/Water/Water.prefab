@@ -104,10 +104,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4621415717174766}
   - component: {fileID: 33914744723404296}
-  - component: {fileID: 64578913156525822}
   - component: {fileID: 23324851944488244}
   - component: {fileID: 6617368573954024358}
   - component: {fileID: 5082548606469236510}
+  - component: {fileID: 6740710607829308668}
   m_Layer: 4
   m_Name: Water
   m_TagString: Untagged
@@ -138,20 +138,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119544133890072}
-  m_Mesh: {fileID: 4300000, guid: 2ce2417d29ff285478399899e22ea166, type: 3}
---- !u!64 &64578913156525822
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1119544133890072}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 2ce2417d29ff285478399899e22ea166, type: 3}
 --- !u!23 &23324851944488244
 MeshRenderer:
@@ -300,6 +286,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &6740710607829308668
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119544133890072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: -0.0000076293945}
 --- !u!1 &1139722782527902
 GameObject:
   m_ObjectHideFlags: 0

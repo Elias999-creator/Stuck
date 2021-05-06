@@ -77949,6 +77949,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.09
       objectReference: {fileID: 0}
+    - target: {fileID: 6740710607829308668, guid: 77c3c714c5cf34274ad66163db745111,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740710607829308668, guid: 77c3c714c5cf34274ad66163db745111,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 250
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77c3c714c5cf34274ad66163db745111, type: 3}
 --- !u!4 &1972499150 stripped
@@ -83449,6 +83459,16 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 6489622ec09ca49d48ea2b2db5318af1, type: 3}
+    - target: {fileID: 6740710607829308668, guid: 77c3c714c5cf34274ad66163db745111,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740710607829308668, guid: 77c3c714c5cf34274ad66163db745111,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77c3c714c5cf34274ad66163db745111, type: 3}
 --- !u!4 &2116810018 stripped
