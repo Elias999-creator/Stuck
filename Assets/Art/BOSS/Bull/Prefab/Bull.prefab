@@ -223,16 +223,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113944}
-  m_LocalRotation: {x: 0, y: -0.9943876, z: 0, w: -0.10579848}
+  m_LocalRotation: {x: 0, y: 0.994388, z: 0, w: 0.105795555}
   m_LocalPosition: {x: -8.16, y: -0.79, z: 8.44}
-  m_LocalScale: {x: 4.921592, y: 4.9215927, z: 4.9215927}
+  m_LocalScale: {x: 4.9215927, y: 4.9215927, z: 4.921593}
   m_Children:
   - {fileID: 410716}
   - {fileID: 481908}
   - {fileID: 4530317484532472742}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 167.854, z: 0}
 --- !u!95 &9522842
 Animator:
   serializedVersion: 3
@@ -343,11 +343,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 013891726c57540d4b94cfcb32294117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 15
+  maxHealth: 100
+  healthBar: {fileID: 0}
   damage:
-    baseValue: 5
+    baseValue: 10
   armor:
-    baseValue: 3
+    baseValue: 6
 --- !u!114 &7951541152423570183
 MonoBehaviour:
   m_ObjectHideFlags: 0
