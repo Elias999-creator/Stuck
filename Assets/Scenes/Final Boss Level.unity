@@ -17939,29 +17939,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 456436, guid: b89e0c3c675d2f6468bb44ecbf17fb04, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4.9215927
-      objectReference: {fileID: 0}
-    - target: {fileID: 456436, guid: b89e0c3c675d2f6468bb44ecbf17fb04, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 4.921593
-      objectReference: {fileID: 0}
-    - target: {fileID: 96157868973388375, guid: b89e0c3c675d2f6468bb44ecbf17fb04,
-        type: 3}
-      propertyPath: maxHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 96157868973388375, guid: b89e0c3c675d2f6468bb44ecbf17fb04,
-        type: 3}
-      propertyPath: damage.baseValue
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 96157868973388375, guid: b89e0c3c675d2f6468bb44ecbf17fb04,
-        type: 3}
-      propertyPath: armor.baseValue
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 8639672689577213911, guid: b89e0c3c675d2f6468bb44ecbf17fb04,
         type: 3}
       propertyPath: m_AnchorMax.x
