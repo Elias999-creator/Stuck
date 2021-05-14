@@ -43752,10 +43752,9 @@ MonoBehaviour:
   dialogue:
     name: Ekard
     sentences:
-    - I guess now I'm stuck in this cave...
-    - I've got to get outta here. Maybe I should look around and see what I can find.
-    - Although... there seems to be lots of enemies around so I've got to take care
-      of them.
+    - I'm out...
+    - This feeling... He's close.
+    - Abaddon...
 --- !u!4 &1346464898
 Transform:
   m_ObjectHideFlags: 0

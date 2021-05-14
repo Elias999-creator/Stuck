@@ -69655,10 +69655,10 @@ MonoBehaviour:
   dialogue:
     name: Ekard
     sentences:
-    - I guess now I'm stuck in this dungeon...
-    - I've got to get outta here. Maybe I should look around and see what I can find.
-    - Although... there seems to be lots of enemies around so I've got to take care
-      of them.
+    - There he is! He's the cause of all of breakouts of the Chompers & Grenadiers!
+    - I feel as if my power alone isn't strong enough to take him down.
+    - There may be things that would give me the upper hand in this final battle.
+    - I should look around.
 --- !u!4 &1820881181
 Transform:
   m_ObjectHideFlags: 0
