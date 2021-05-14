@@ -15778,7 +15778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 217328264}
-  offset: {x: 0.5, y: -0.2, z: 0}
+  offset: {x: 0.5, y: -0.42, z: 0}
   zoomSpeed: 4
   minZoom: 5
   maxZoom: 15
